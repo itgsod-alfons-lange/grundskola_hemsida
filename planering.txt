@@ -1,0 +1,12 @@
+1.1
+    Kunden för den här webbsidan är en grundskola.
+
+1.2
+
+
+1.3
+    Sidan ska innehålla sidor med:
+    Aktuellt - vad som händer på skolan just nu,
+    Om Skolan - information om vad det är för skola,
+    Personal - personalens kontaktuppgifter osv,
+    Information om sjukanmälan,
