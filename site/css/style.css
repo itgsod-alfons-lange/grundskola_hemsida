@@ -1,0 +1,113 @@
+body, html{
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto', Tahoma;
+    background-color: rgba(235,235,235,1);
+}
+/* HEADER START */
+@media(max-width:1000px){
+    html{background-color: red}
+}
+@media(max-width:700px){
+    html{background-color: blue;}
+}
+@media(max-width:500px){
+    html{background-color: green;}
+}
+
+
+
+
+#school_image{
+    width:100%;
+}
+
+#header_image{
+    background: url("/grundskola_hemsida/site/img/skola_bakgrund.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:12vw;
+    background-color: rgba(255,255,255,0.5);
+    position:relative;
+}
+#header_logo{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    font-size: 50px;
+}
+#header_menu_holder{
+    height:5vw;
+    background-color: rgba(0,128,255,0.5);
+}
+.header_menu_item{
+    height:100%;
+    padding:0px 30px;
+    line-height:5vw;
+    float:left;
+    color:rgba(255,255,255,1);
+    font-size:2.5vw;
+    text-decoration: none;
+}
+.header_menu_item:hover{
+    background-color:rgba(0,0,0,0.1);
+}
+.marked{
+    background-color:rgba(0,0,0,0.2);
+}
+.marked:hover{
+    background-color:rgba(0,0,0,0.3);
+}
+/* HEADER END */
+
+
+/* CONTENT START */
+#content_items_holder{
+float:left;
+}
+.content_item{
+    position:relative;
+    background-color: rgba(255,255,255,1);
+    padding:5px;
+    margin:20px 50px;
+    width:500px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.content_item_date{
+    position: absolute;
+    top:5px;
+    right:5px;
+    font-style: italic;
+    color:rgba(150,150,150,1);
+}
+.content_item_header{
+    font-weight: bold;
+    font-size:150%;
+}
+.content_item_text{
+    margin-top:5px;
+    font-size:115%;
+}
+#sidebar_navigation_container{
+    margin:20px 50px;
+    padding: 20px;
+    float:left;
+    border:1px solid blue;
+    border-right: 0px;
+    border-radius: 15px 0px 0px 15px;
+}
+.sidebar_navigation_item{
+    display:block;
+    font-size:35px;
+}
+/* CONTENT END */
+
+
+
+
+
+
+
+
