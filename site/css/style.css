@@ -108,6 +108,11 @@ body, html{
         width:500px;
         float:left;
     }
+    #employee_items_holder{
+        margin:20px 50px;
+        width:500px;
+        float:left;
+    }
     #map_container{
         float:left;
         width:calc(100% - 650px);
@@ -140,6 +145,10 @@ body, html{
         text-decoration: none;
     }
     #content_items_holder{
+        margin:15px auto;
+        width:738px;
+    }
+    #employee_items_holder{
         margin:15px auto;
         width:738px;
     }
@@ -176,6 +185,10 @@ body, html{
         margin:10px auto;
         width:calc(100% - 20px);
     }
+    #employee_items_holder{
+        margin:10px auto;
+        width:calc(100% - 20px);
+    }
     #map_container{
         width:calc(100% - 20px);
         margin: 20px auto;
@@ -190,10 +203,14 @@ body, html{
         margin:10px auto;
         width:calc(100% - 20px);
     }
+    #employee_items_holder{
+        margin:10px auto;
+        width:calc(100% - 20px);
+    }
 }
 
 
-.content_item{
+.content_item, .employee_item{
     position:relative;
     background-color: rgba(255,255,255,1);
     padding:1%;
@@ -235,6 +252,9 @@ body, html{
 }
 #map_container{
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#map{
+    height:400px;
 }
 
 /* CONTENT END */
