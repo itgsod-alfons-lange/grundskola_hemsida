@@ -10,10 +10,11 @@ body, html{
         height:150px;
     }
     #header_logo{
-        font-size:50px;
+        height:75px;
     }
     #header_menu_holder{
         height:50px;
+        background-color: black;
     }
     .header_menu_item{
         padding:0px 30px;
@@ -26,7 +27,7 @@ body, html{
         height:100px;
     }
     #header_logo{
-        font-size:35px;
+        height:50px;
     }
     #header_menu_holder{
         height:40px;
@@ -42,7 +43,7 @@ body, html{
         height:75px;
     }
     #header_logo{
-        font-size:25px;
+        height:50px;
     }
     #header_menu_holder{
         height:40px;
@@ -55,18 +56,19 @@ body, html{
 }
 
 #header_image{
-    background: url("/grundskola_hemsida/site/img/skola_bakgrund.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url("/grundskola_hemsida/site/img/skola_bakgrund.jpg");
+    background-size: 100%;
+    background-position: 0;
     background-color: rgba(255,255,255,0.5);
     position:relative;
 }
 #header_logo{
     position:absolute;
-    bottom:0px;
-    left:0px;
+    bottom:5px;
+    left:20px;
+}
+#header_logo_image{
+    height:100%;
 }
 #header_menu_holder{
     background-color: rgba(0,128,255,0.5);
@@ -113,6 +115,11 @@ body, html{
         width:924px;
         float:left;
     }
+    #report_items_holder{
+        margin:12px 50px;
+        width:924px;
+        float:left;
+    }
     .employee_item{
          position:relative;
          background-color: rgba(255,255,255,1);
@@ -122,6 +129,15 @@ body, html{
          margin:0px 1% 10px 1%;
          float:left;
          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    .report_item{
+        position:relative;
+        background-color: rgba(255,255,255,1);
+        padding:1%;
+        width:46%;
+        margin:0px 1% 10px 1%;
+        float:left;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
     #map_container{
         float:left;
@@ -162,6 +178,10 @@ body, html{
         margin:15px auto;
         width:738px;
     }
+    #report_items_holder{
+        margin:15px auto;
+        width:738px;
+    }
     .employee_item{
         position:relative;
         background-color: rgba(255,255,255,1);
@@ -170,6 +190,14 @@ body, html{
         height:160px;
         margin:0px 0px 10px 0px;
         float:left;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    .report_item{
+        position:relative;
+        background-color: rgba(255,255,255,1);
+        padding:1%;
+        width:98%;
+        margin:0px 0px 10px 0px;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
     #map_container{
@@ -209,6 +237,10 @@ body, html{
         margin:10px auto;
         width:calc(100% - 20px);
     }
+    #report_items_holder{
+        margin:10px auto;
+        width:calc(100% - 20px);
+    }
     .employee_item{
         position:relative;
         background-color: rgba(255,255,255,1);
@@ -217,6 +249,14 @@ body, html{
         height:160px;
         margin:0px 0px 10px 0px;
         float:left;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    .report_item{
+        position:relative;
+        background-color: rgba(255,255,255,1);
+        padding:1%;
+        width:98%;
+        margin:0px 0px 10px 0px;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
     #map_container{
@@ -237,6 +277,10 @@ body, html{
         margin:10px auto;
         width:calc(100% - 20px);
     }
+    #report_items_holder{
+        margin:10px auto;
+        width:calc(100% - 20px);
+    }
     .employee_item{
         position:relative;
         background-color: rgba(255,255,255,1);
@@ -247,8 +291,15 @@ body, html{
         float:left;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
+    .report_item{
+        position:relative;
+        background-color: rgba(255,255,255,1);
+        padding:1%;
+        width:98%;
+        margin:0px 0px 10px 0px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
 }
-
 
 .content_item{
     position:relative;
@@ -294,6 +345,11 @@ body, html{
 .content_item_text{
     margin-top:5px;
     font-size:115%;
+}
+.report_item_phone{
+    text-align: center;
+    font-weight: bold;
+    font-size:200%;
 }
 #sidebar_navigation_container_small{
     width:100%;
