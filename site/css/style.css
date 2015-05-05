@@ -105,7 +105,7 @@ body, html{
     .sidebar_navigation_item{
         display:block;
         font-size:35px;
-        color:orange;
+        color:rgba(255,150,0,1);
         text-decoration:none;
     }
     #content_items_holder{
@@ -413,13 +413,13 @@ body, html{
 }
 #sidebar_navigation_container_small{
     width:100%;
-    background-color: white;
+    background-color: rgba(255,255,255,1);
 }
 #sidebar_navigation_container_large{
     margin:20px 50px;
     padding: 20px;
     float:left;
-    border:1px solid blue;
+    border:1px solid rgba(0,0,255,1);
     border-right: 0px;
 }
 .sidebar_navigation_item:hover{
