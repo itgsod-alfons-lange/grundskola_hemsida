@@ -4,6 +4,23 @@ body, html{
     font-family: 'Roboto', Tahoma;
     background-color: rgba(235,235,235,1);
 }
+#test{
+    width:100%;
+    position:absolute;
+    height: 100%;
+}
+.testsmall{
+    width:10%;
+    height:100%;
+    background-color: rgba(0,0,0,1);
+    z-index:10000;
+    position: relative;
+    float:left;
+}
+#main_container{
+    opacity:1;/* Will change at page startup */
+}
+
 /* HEADER START */
 @media(min-width:1024px){
     #header_image{

@@ -4,33 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Aktuellt</title>
-    <link href="/grundskola_hemsida/site/css/style.css" type="text/css" rel="stylesheet">
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic' rel='stylesheet' type='text/css'>
+    <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var str = ""
+            for(var i = 0; i < 10; i++){
+                str += "<div class='testsmall' id='testsmall" + i + "'></div>";
+            }
+            $("#test").html(str);
+            testanimate(0);
+        });
+        function testanimate(id){
+            if(id == 10){$("#test").hide();return;}
+            $("#testsmall" + id).animate({"opacity":0}, 40, function(){testanimate(id+1)});
+        }
+    </script>
 </head>
 <body>
+<div id="test">
+</div>
 <div id="main_container">
     <div id="header_container">
         <div id="header_image">
-            <div id="header_logo"><img id="header_logo_image" src="/grundskola_hemsida/site/img/skola_logga.png"></div>
+            <div id="header_logo"><img id="header_logo_image" src=".//img/skola_logga.png"></div>
         </div>
         <div id="header_menu_holder">
-            <a class="header_menu_item marked" href="/grundskola_hemsida/site/index.html">
+            <a class="header_menu_item marked" href="./index.html">
                 Aktuellt
             </a>
-            <a class="header_menu_item" href="/grundskola_hemsida/site/om-skolan.html">
+            <a class="header_menu_item" href="./om-skolan.html">
                 Om skolan
             </a>
-            <a class="header_menu_item" href="/grundskola_hemsida/site/personal.html">
+            <a class="header_menu_item" href="./personal.html">
                 Personal
             </a>
-            <a class="header_menu_item" href="/grundskola_hemsida/site/sjukanmalan.html">
+            <a class="header_menu_item" href="./sjukanmalan.html">
                 Sjukanmälan
             </a>
         </div>
         <div id="sidebar_navigation_container_small">
-            <a class="sidebar_navigation_item marked" href="/grundskola_hemsida/site/index.html">Aktuellt</a>
-            <a class="sidebar_navigation_item" href="/grundskola_hemsida/site/ledighet.html">Ledighet</a>
-            <a class="sidebar_navigation_item" href="/grundskola_hemsida/site/aktiviteter.html">Aktiviteter</a>
+            <a class="sidebar_navigation_item marked" href="./index.html">Aktuellt</a>
+            <a class="sidebar_navigation_item" href="./ledighet.html">Ledighet</a>
+            <a class="sidebar_navigation_item" href="./aktiviteter.html">Aktiviteter</a>
         </div>
     </div>
     <div id="content_container">
@@ -52,9 +69,9 @@
             </div>
         </div>
         <div id="sidebar_navigation_container_large">
-            <a class="sidebar_navigation_item marked" href="/grundskola_hemsida/site/index.html">Aktuellt</a>
-            <a class="sidebar_navigation_item" href="/grundskola_hemsida/site/ledighet.html">Ledighet</a>
-            <a class="sidebar_navigation_item" href="/grundskola_hemsida/site/aktiviteter.html">Aktiviteter</a>
+            <a class="sidebar_navigation_item marked" href="./index.html">Aktuellt</a>
+            <a class="sidebar_navigation_item" href="./ledighet.html">Ledighet</a>
+            <a class="sidebar_navigation_item" href="./aktiviteter.html">Aktiviteter</a>
         </div>
     </div>
 </div>
